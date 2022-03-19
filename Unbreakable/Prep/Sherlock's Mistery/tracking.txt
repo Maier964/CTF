@@ -1,0 +1,1945 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20201208095042
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS C:\Users\alice> cd
+PS C:\Users\alice> ls 
+
+
+    Directory: C:\Users\alice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         12/7/2020  11:33 AM                3D Objects
+d-r---         12/7/2020  11:33 AM                Contacts
+d-r---         12/8/2020   9:50 AM                Desktop
+d-r---         12/7/2020  11:33 AM                Documents
+d-r---         12/7/2020   4:42 PM                Downloads
+d-r---         12/7/2020  11:33 AM                Favorites
+d-r---         12/7/2020  11:33 AM                Links
+d-r---         12/7/2020  11:33 AM                Music
+d-r---         12/7/2020  11:36 AM                OneDrive
+d-r---         12/7/2020  11:35 AM                Pictures
+d-r---         12/7/2020  11:33 AM                Saved Games
+d-r---         12/7/2020  11:35 AM                Searches
+d-r---         12/8/2020  12:14 AM                Videos
+
+
+PS C:\Users\alice> cd Downloads
+PS C:\Users\alice\Downloads> dir
+
+
+    Directory: C:\Users\alice\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         12/7/2020   4:42 PM                Invoke-Obfuscation-master (1)
+-a----         12/7/2020   4:42 PM         172190 Invoke-Obfuscation-master (1).zip
+
+
+PS C:\Users\alice\Downloads> curl google.com
+>> TerminatingError(Invoke-WebRequest): "The response content cannot be parsed because the Internet Explorer engine is not available, or Internet Explorer's first-launch configuration is not complete. Specify the UseBasicParsing parameter and try again. "
+**********************
+Windows PowerShell transcript start
+Start time: 20201208095317
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The response content cannot be parsed because the Internet Explorer engine is not available, or Internet Explorer's first-launch configuration is not complete. Specify the UseBasicParsing parameter and try again. "
+curl : The response content cannot be parsed because the Internet Explorer engine is not available, or Internet 
+Explorer's first-launch configuration is not complete. Specify the UseBasicParsing parameter and try again. 
+At line:1 char:1
++ curl google.com
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotImplemented: (:) [Invoke-WebRequest], NotSupportedException
+    + FullyQualifiedErrorId : WebCmdletIEDomNotSupportedException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+curl : The response content cannot be parsed because the Internet Explorer engine is not available, or Internet 
+Explorer's first-launch configuration is not complete. Specify the UseBasicParsing parameter and try again. 
+At line:1 char:1
++ curl google.com
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotImplemented: (:) [Invoke-WebRequest], NotSupportedException
+    + FullyQualifiedErrorId : WebCmdletIEDomNotSupportedException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+curl : The response content cannot be parsed because the Internet Explorer engine is not available, or Internet
+Explorer's first-launch configuration is not complete. Specify the UseBasicParsing parameter and try again.
+At line:1 char:1
++ curl google.com
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotImplemented: (:) [Invoke-WebRequest], NotSupportedException
+    + FullyQualifiedErrorId : WebCmdletIEDomNotSupportedException,Microsoft.PowerShell.Commands.InvokeWebRequestComman
+   d
+
+PS C:\Users\alice\Downloads> cd ..
+PS C:\Users\alice> cd .\Desktop\
+PS C:\Users\alice\Desktop> die
+**********************
+Windows PowerShell transcript start
+Start time: 20201208101820
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\alice\Desktop> dir
+
+
+    Directory: C:\Users\alice\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         12/8/2020   9:50 AM                20201208
+d-----         12/7/2020   4:31 PM                Invoke-Obfuscation-master
+-a----         12/7/2020  11:35 AM           1446 Microsoft Edge.lnk
+
+
+PS C:\Users\alice\Desktop> subl 
+**********************
+Windows PowerShell transcript start
+Start time: 20201208101829
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'subl' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+subl : The term 'subl' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ subl
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (subl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+subl : The term 'subl' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ subl
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (subl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+subl : The term 'subl' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ subl
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (subl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+PS C:\Users\alice\Desktop> New-Item "C:\Users\alice\Desktop\whatyouneedishere.txt"
+
+
+    Directory: C:\Users\alice\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         12/8/2020  10:34 AM              0 whatyouneedishere.txt
+
+
+t" 
+
+"dGhpc2lzdGhlMXN0ZmxhZw=="
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\alice\Desktop> Add-Content "C:\Users\alice\Desktop\whatyouneedishere.txt" 
+
+"dGhpc2lzdGhlMXN0ZmxhZw=="
+dGhpc2lzdGhlMXN0ZmxhZw==
+PS C:\Users\alice\Desktop> ls -a
+>> TerminatingError(Get-ChildItem): "Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System."
+**********************
+Windows PowerShell transcript start
+Start time: 20201208103742
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System."
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: 
+-Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: 
+-Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include:
+-Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\alice\Desktop> help 
+
+TOPIC
+    Windows PowerShell Help System
+
+SHORT DESCRIPTION
+    Displays help about Windows PowerShell cmdlets and concepts.
+
+LONG DESCRIPTION
+    Windows PowerShell Help describes Windows PowerShell cmdlets,
+    functions, scripts, and modules, and explains concepts, including
+    the elements of the Windows PowerShell language.
+
+    Windows PowerShell does not include help files, but you can read the
+    help topics online, or use the Update-Help cmdlet to download help files
+    to your computer and then use the Get-Help cmdlet to display the help
+    topics at the command line.
+
+    You can also use the Update-Help cmdlet to download updated help files
+    as they are released so that your local help content is never obsolete.
+
+    Without help files, Get-Help displays auto-generated help for cmdlets,
+    functions, and scripts.
+
+
+  ONLINE HELP
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518.
+
+    To open online help for any cmdlet or function, type:
+
+        Get-Help <cmdlet-name> -Online
+
+  UPDATE-HELP
+    To download and install help files on your computer:
+
+       1. Start Windows PowerShell with the "Run as administrator" option.
+       2. Type:
+
+          Update-Help
+
+    After the help files are installed, you can use the Get-Help cmdlet to
+    display the help topics. You can also use the Update-Help cmdlet to
+    download updated help files so that your local help files are always
+    up-to-date.
+
+    For more information about the Update-Help cmdlet, type:
+
+       Get-Help Update-Help -Online
+
+    or go to: http://go.microsoft.com/fwlink/?LinkID=210614
+
+
+  GET-HELP
+    The Get-Help cmdlet displays help at the command line from content in
+    help files on your computer. Without help files, Get-Help displays basic
+    help about cmdlets and functions. You can also use Get-Help to display
+    online help for cmdlets and functions.
+
+    To get help for a cmdlet, type:
+
+        Get-Help <cmdlet-name>
+
+    To get online help, type:
+
+        Get-Help <cmdlet-name> -Online
+
+    The titles of conceptual topics begin with "About_".
+    To get help for a concept or language element, type:
+
+        Get-Help About_<topic-name>
+
+    To search for a word or phrase in all help files, type:
+
+        Get-Help <search-term>
+
+    For more information about the Get-Help cmdlet, type:
+
+        Get-Help Get-Help -Online
+
+    or go to: http://go.microsoft.com/fwlink/?LinkID=113316
+
+
+  EXAMPLES:
+      Save-Help              : Download help files from the Internet and saves
+                               them on a file share.
+      Update-Help            : Downloads and installs help files from the
+                               Internet or a file share.
+      Get-Help Get-Process   : Displays help about the Get-Process cmdlet.
+      Get-Help Get-Process -Online
+                             : Opens online help for the Get-Process cmdlet.
+      Help Get-Process       : Displays help about Get-Process one page at a time.
+      Get-Process -?         : Displays help about the Get-Process cmdlet.
+      Get-Help About_Modules : Displays help about Windows PowerShell modules.
+      Get-Help remoting      : Searches the help topics for the word "remoting."
+
+  SEE ALSO:
+      about_Updatable_Help
+      Get-Help
+      Save-Help
+      Update-Help
+PS C:\Users\alice\Desktop> Get-Help
+
+TOPIC
+    Windows PowerShell Help System
+
+SHORT DESCRIPTION
+    Displays help about Windows PowerShell cmdlets and concepts. 
+
+LONG DESCRIPTION
+    Windows PowerShell Help describes Windows PowerShell cmdlets,
+    functions, scripts, and modules, and explains concepts, including
+    the elements of the Windows PowerShell language.
+
+    Windows PowerShell does not include help files, but you can read the
+    help topics online, or use the Update-Help cmdlet to download help files
+    to your computer and then use the Get-Help cmdlet to display the help
+    topics at the command line.
+
+    You can also use the Update-Help cmdlet to download updated help files
+    as they are released so that your local help content is never obsolete. 
+
+    Without help files, Get-Help displays auto-generated help for cmdlets, 
+    functions, and scripts.
+
+
+  ONLINE HELP    
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518. 
+
+    To open online help for any cmdlet or function, type:
+
+        Get-Help <cmdlet-name> -Online    
+
+  UPDATE-HELP
+    To download and install help files on your computer:
+
+       1. Start Windows PowerShell with the "Run as administrator" option.
+       2. Type:
+
+          Update-Help
+
+    After the help files are installed, you can use the Get-Help cmdlet to
+    display the help topics. You can also use the Update-Help cmdlet to
+    download updated help files so that your local help files are always
+    up-to-date.
+    
+    For more information about the Update-Help cmdlet, type:
+
+       Get-Help Update-Help -Online
+
+    or go to: http://go.microsoft.com/fwlink/?LinkID=210614
+
+
+  GET-HELP
+    The Get-Help cmdlet displays help at the command line from content in
+    help files on your computer. Without help files, Get-Help displays basic
+    help about cmdlets and functions. You can also use Get-Help to display
+    online help for cmdlets and functions.
+
+    To get help for a cmdlet, type:
+
+        Get-Help <cmdlet-name>
+    
+    To get online help, type:
+   
+        Get-Help <cmdlet-name> -Online    
+
+    The titles of conceptual topics begin with "About_".
+    To get help for a concept or language element, type:
+
+        Get-Help About_<topic-name>
+
+    To search for a word or phrase in all help files, type:
+
+        Get-Help <search-term>
+
+    For more information about the Get-Help cmdlet, type:
+
+        Get-Help Get-Help -Online
+
+    or go to: http://go.microsoft.com/fwlink/?LinkID=113316
+
+
+  EXAMPLES:
+      Save-Help              : Download help files from the Internet and saves
+                               them on a file share.
+      Update-Help            : Downloads and installs help files from the
+                               Internet or a file share.
+      Get-Help Get-Process   : Displays help about the Get-Process cmdlet.   
+      Get-Help Get-Process -Online
+                             : Opens online help for the Get-Process cmdlet.                            
+      Help Get-Process       : Displays help about Get-Process one page at a time.
+      Get-Process -?         : Displays help about the Get-Process cmdlet.      
+      Get-Help About_Modules : Displays help about Windows PowerShell modules.
+      Get-Help remoting      : Searches the help topics for the word "remoting."
+
+  SEE ALSO:
+      about_Updatable_Help
+      Get-Help
+      Save-Help
+      Update-Help
+PS C:\Users\alice\Desktop> Get-Help Powershell
+
+NAME
+    Import-PowerShellDataFile
+
+SYNTAX
+    Import-PowerShellDataFile [[-Path] <string[]>]  [<CommonParameters>]
+
+    Import-PowerShellDataFile [-LiteralPath <string[]>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Import-PowerShellDataFile -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=623621.
+
+
+
+PS C:\Users\alice\Desktop> Import-PowerShellDataFile
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104000
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\a:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\a:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\a:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\b' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\b' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\b:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\b' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\b:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\b' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\b:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\c' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\c' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\c:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\c' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\c:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\c' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\c:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\w' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\w' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\w:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\w' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\w:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\w' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\w:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\s' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\s' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\s:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\s' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\s:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\s' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\s:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\s' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\s' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\s:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\s' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\s:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\s' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\s:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\a:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\a:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\a:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\a:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\a:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\a' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\a:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\f' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\f' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\f:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\f' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\f:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\f' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\f:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\g' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\g' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\g:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\g' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\g:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\g' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\g:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104001
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist."
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At 
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544 
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+Resolve-Path : Cannot find path 'C:\Users\alice\Desktop\d' because it does not exist.
+At
+C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psm1:544
+char:35
++         foreach($resolvedPath in (Resolve-Path @PSBoundParameters))
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alice\Desktop\d:String) [Resolve-Path], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
+
+PS C:\Users\alice\Desktop> aa
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104002
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'aa' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+aa : The term 'aa' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ aa
++ ~~
+    + CategoryInfo          : ObjectNotFound: (aa:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+aa : The term 'aa' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ aa
++ ~~
+    + CategoryInfo          : ObjectNotFound: (aa:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+aa : The term 'aa' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ aa
++ ~~
+    + CategoryInfo          : ObjectNotFound: (aa:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\alice\Desktop> Get-Time
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104010
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'Get-Time' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+Get-Time : The term 'Get-Time' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Time
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Time:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Get-Time : The term 'Get-Time' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Time
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Time:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Get-Time : The term 'Get-Time' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Time
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Time:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\alice\Desktop> Get-Help 
+
+TOPIC
+    Windows PowerShell Help System
+
+SHORT DESCRIPTION
+    Displays help about Windows PowerShell cmdlets and concepts. 
+
+LONG DESCRIPTION
+    Windows PowerShell Help describes Windows PowerShell cmdlets,
+    functions, scripts, and modules, and explains concepts, including
+    the elements of the Windows PowerShell language.
+
+    Windows PowerShell does not include help files, but you can read the
+    help topics online, or use the Update-Help cmdlet to download help files
+    to your computer and then use the Get-Help cmdlet to display the help
+    topics at the command line.
+
+    You can also use the Update-Help cmdlet to download updated help files
+    as they are released so that your local help content is never obsolete. 
+
+    Without help files, Get-Help displays auto-generated help for cmdlets, 
+    functions, and scripts.
+
+
+  ONLINE HELP    
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518. 
+
+    To open online help for any cmdlet or function, type:
+
+        Get-Help <cmdlet-name> -Online    
+
+  UPDATE-HELP
+    To download and install help files on your computer:
+
+       1. Start Windows PowerShell with the "Run as administrator" option.
+       2. Type:
+
+          Update-Help
+
+    After the help files are installed, you can use the Get-Help cmdlet to
+    display the help topics. You can also use the Update-Help cmdlet to
+    download updated help files so that your local help files are always
+    up-to-date.
+    
+    For more information about the Update-Help cmdlet, type:
+
+       Get-Help Update-Help -Online
+
+    or go to: http://go.microsoft.com/fwlink/?LinkID=210614
+
+
+  GET-HELP
+    The Get-Help cmdlet displays help at the command line from content in
+    help files on your computer. Without help files, Get-Help displays basic
+    help about cmdlets and functions. You can also use Get-Help to display
+    online help for cmdlets and functions.
+
+    To get help for a cmdlet, type:
+
+        Get-Help <cmdlet-name>
+    
+    To get online help, type:
+   
+        Get-Help <cmdlet-name> -Online    
+
+    The titles of conceptual topics begin with "About_".
+    To get help for a concept or language element, type:
+
+        Get-Help About_<topic-name>
+
+    To search for a word or phrase in all help files, type:
+
+        Get-Help <search-term>
+
+    For more information about the Get-Help cmdlet, type:
+
+        Get-Help Get-Help -Online
+
+    or go to: http://go.microsoft.com/fwlink/?LinkID=113316
+
+
+  EXAMPLES:
+      Save-Help              : Download help files from the Internet and saves
+                               them on a file share.
+      Update-Help            : Downloads and installs help files from the
+                               Internet or a file share.
+      Get-Help Get-Process   : Displays help about the Get-Process cmdlet.   
+      Get-Help Get-Process -Online
+                             : Opens online help for the Get-Process cmdlet.                            
+      Help Get-Process       : Displays help about Get-Process one page at a time.
+      Get-Process -?         : Displays help about the Get-Process cmdlet.      
+      Get-Help About_Modules : Displays help about Windows PowerShell modules.
+      Get-Help remoting      : Searches the help topics for the word "remoting."
+
+  SEE ALSO:
+      about_Updatable_Help
+      Get-Help
+      Save-Help
+      Update-Help
+PS C:\Users\alice\Desktop> Get-
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104025
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'Get-' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+Get- : The term 'Get-' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Get- : The term 'Get-' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Get- : The term 'Get-' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\alice\Desktop> Get-Process
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    341      20     8504      26096       0.23   3272   1 ApplicationFrameHost
+    172      10     6284      11728       0.06   5684   0 audiodg
+    137       9     1568       8220       0.02   4276   1 browser_broker
+    375      22    14492      40224       0.77   1820   1 chrome
+    283      17     9624      27572       1.25   2424   1 chrome
+    148       9     1676       7860       0.03   2436   1 chrome
+   1154      47    51868     114180       4.50   2924   1 chrome
+    381      29    84636     131312       5.77   4936   1 chrome
+    196      13    12724      22276       0.06   5180   1 chrome
+    268      14     4104      16968       2.00   6140   1 conhost
+    340      14     1576       4452               408   0 csrss
+    402      17     1628       4632               484   1 csrss
+    483      17     6052      20580       1.80   1712   1 ctfmon
+    123       7     1340       6708       0.06   3544   1 dllhost
+    219      16     3328      11272       0.16   5432   1 dllhost
+    883      46    37332      61740               884   1 dwm
+   2138      85    41092     115316       9.08   2804   1 explorer
+     39       5     1276       2396               672   0 fontdrvhost
+     39       6     1612       3912               680   1 fontdrvhost
+    170      10     1560       1432               692   0 GoogleCrashHandler
+    153       9     1648        188              1244   0 GoogleCrashHandler64
+      0       0       60          8                 0   0 Idle
+   1112      25     6104      15240               604   0 lsass
+      0       0      380      85356              1336   0 Memory Compression
+    592      42    35488       1456       0.44   5276   1 Microsoft.Photos
+    897      75    22288      49692       0.48   3540   1 MicrosoftEdge
+    494      20     5676      22224       0.08   4652   1 MicrosoftEdgeCP
+    269      14     3848      11560       0.03   4612   1 MicrosoftEdgeSH
+    772      66    83900      71324       5.17   5676   1 mmc
+    314      18    26764      26796              2504   0 MoUsoCoreWorker
+    666      67   168484      93464              1960   0 MsMpEng
+    205      11     3644       9044              2356   0 NisSrv
+    698      51    22716      54412       1.39   3564   1 OneDrive
+    968      46   102188     122448       6.25   6120   1 powershell
+      0       8     3836      25172                72   0 Registry
+    285      15     4808      16964       0.14   3168   1 RuntimeBroker
+    298      17     5352      23396       0.16   3360   1 RuntimeBroker
+    332      17     5932      24880       1.19   3788   1 RuntimeBroker
+    531      24     9948      31968       0.84   4084   1 RuntimeBroker
+    132       8     1496       7336       0.03   4548   1 RuntimeBroker
+    287      15     3540      16440       0.36   5004   1 RuntimeBroker
+    142       9     1604       8176       0.03   6040   1 RuntimeBroker
+   1252     100    99308      87224       5.47   3924   1 SearchApp
+    719      41    19116      26720              1812   0 SearchIndexer
+    433      17     4408      16080              4452   0 SecurityHealthService
+    159       9     1676       8668       0.02   5064   1 SecurityHealthSystray
+    336      10     3380       6860               576   0 services
+    103       7     4144       6672              2520   0 SgrmBroker
+    701      29    13396      51264       0.39   4488   1 ShellExperienceHost
+    580      18     6108      26172       1.81   2816   1 sihost
+     53       3     1072        984               312   0 smss
+    432      21     5076      12348              1704   0 spoolsv
+    611      28    19748      62900       1.33   3716   1 StartMenuExperienceHost
+    226      12     2492       9316               256   0 svchost
+    786      42    10072      30064               324   0 svchost
+    682      28    40436      50476               360   0 svchost
+    968      24    10208      28916               724   0 svchost
+    965      18     6168      13088               796   0 svchost
+    402      16    15252      23272               980   0 svchost
+   1852     104    35244      62068              1000   0 svchost
+    701      28    19032      25756              1008   0 svchost
+    973      36     8976      17268              1140   0 svchost
+    363      13     3008      12560              1408   0 svchost
+    204      13     9284      16144              1512   0 svchost
+    359      12     2148       8004              1532   0 svchost
+    127       8     1456       5812              1548   0 svchost
+    414      32     7832      12308              1724   0 svchost
+    164      12     1584       6180              1800   0 svchost
+    527      24    14192      23112              1876   0 svchost
+    718      29    10056      42872       1.23   1932   1 svchost
+    200      11     1848       7264              2256   0 svchost
+    253      15     2332       9004              2620   0 svchost
+    317      18     3572      13812              2948   0 svchost
+    311      16     3720      21408       0.20   3524   1 svchost
+    140       8     1536       6648              4288   0 svchost
+   2374       0      196        148                 4   0 System
+    304      30     6192      16308       0.34   2692   1 taskhostw
+    531      22     8944      34844       0.41   5316   1 TextInputHost
+    114       6     1280       5236              4424   0 Windows.WARP.JITService
+    164      11     1324       5904               476   0 wininit
+    271      12     2452       9324               532   1 winlogon
+    709      46    21784       1156       0.30   3916   1 YourPhone
+
+
+PS C:\Users\alice\Desktop> GEt-Help
+
+TOPIC
+    Windows PowerShell Help System
+
+SHORT DESCRIPTION
+    Displays help about Windows PowerShell cmdlets and concepts. 
+
+LONG DESCRIPTION
+    Windows PowerShell Help describes Windows PowerShell cmdlets,
+    functions, scripts, and modules, and explains concepts, including
+    the elements of the Windows PowerShell language.
+
+    Windows PowerShell does not include help files, but you can read the
+    help topics online, or use the Update-Help cmdlet to download help files
+    to your computer and then use the Get-Help cmdlet to display the help
+    topics at the command line.
+
+    You can also use the Update-Help cmdlet to download updated help files
+    as they are released so that your local help content is never obsolete. 
+
+    Without help files, Get-Help displays auto-generated help for cmdlets, 
+    functions, and scripts.
+
+
+  ONLINE HELP    
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518. 
+
+    To open online help for any cmdlet or function, type:
+
+        Get-Help <cmdlet-name> -Online    
+
+  UPDATE-HELP
+    To download and install help files on your computer:
+
+       1. Start Windows PowerShell with the "Run as administrator" option.
+       2. Type:
+
+          Update-Help
+
+    After the help files are installed, you can use the Get-Help cmdlet to
+    display the help topics. You can also use the Update-Help cmdlet to
+    download updated help files so that your local help files are always
+    up-to-date.
+    
+    For more information about the Update-Help cmdlet, type:
+
+       Get-Help Update-Help -Online
+
+    or go to: http://go.microsoft.com/fwlink/?LinkID=210614
+
+
+  GET-HELP
+    The Get-Help cmdlet displays help at the command line from content in
+    help files on your computer. Without help files, Get-Help displays basic
+    help about cmdlets and functions. You can also use Get-Help to display
+    online help for cmdlets and functions.
+
+    To get help for a cmdlet, type:
+
+        Get-Help <cmdlet-name>
+    
+    To get online help, type:
+   
+        Get-Help <cmdlet-name> -Online    
+
+    The titles of conceptual topics begin with "About_".
+    To get help for a concept or language element, type:
+
+        Get-Help About_<topic-name>
+
+    To search for a word or phrase in all help files, type:
+
+        Get-Help <search-term>
+
+    For more information about the Get-Help cmdlet, type:
+
+        Get-Help Get-Help -Online
+
+    or go to: http://go.microsoft.com/fwlink/?LinkID=113316
+
+
+  EXAMPLES:
+      Save-Help              : Download help files from the Internet and saves
+                               them on a file share.
+      Update-Help            : Downloads and installs help files from the
+                               Internet or a file share.
+      Get-Help Get-Process   : Displays help about the Get-Process cmdlet.   
+      Get-Help Get-Process -Online
+                             : Opens online help for the Get-Process cmdlet.                            
+      Help Get-Process       : Displays help about Get-Process one page at a time.
+      Get-Process -?         : Displays help about the Get-Process cmdlet.      
+      Get-Help About_Modules : Displays help about Windows PowerShell modules.
+      Get-Help remoting      : Searches the help topics for the word "remoting."
+
+  SEE ALSO:
+      about_Updatable_Help
+      Get-Help
+      Save-Help
+      Update-Help
+PS C:\Users\alice\Desktop> Get-Help About_Modukes
+**********************
+Windows PowerShell transcript start
+Start time: 20201208104256
+Username: DESKTOP-40HVEGI\alice
+RunAs User: DESKTOP-40HVEGI\alice
+Configuration Name: 
+Machine: DESKTOP-40HVEGI (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6120
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Get-Help could not find About_Modukes in a help file in this session. To download updated help topics type: "Update-Help". To get help online, search for the help topic in the TechNet library at https:/go.microsoft.com/fwlink/?LinkID=107116."
+Get-Help : Get-Help could not find About_Modukes in a help file in this session. To download updated help topics type: 
+"Update-Help". To get help online, search for the help topic in the TechNet library at 
+https:/go.microsoft.com/fwlink/?LinkID=107116.
+At line:1 char:1
++ Get-Help About_Modukes
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-Help], HelpNotFoundException
+    + FullyQualifiedErrorId : HelpNotFound,Microsoft.PowerShell.Commands.GetHelpCommand
+Get-Help : Get-Help could not find About_Modukes in a help file in this session. To download updated help topics type: 
+"Update-Help". To get help online, search for the help topic in the TechNet library at 
+https:/go.microsoft.com/fwlink/?LinkID=107116.
+At line:1 char:1
++ Get-Help About_Modukes
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-Help], HelpNotFoundException
+    + FullyQualifiedErrorId : HelpNotFound,Microsoft.PowerShell.Commands.GetHelpCommand
+Get-Help : Get-Help could not find About_Modukes in a help file in this session. To download updated help topics type:
+"Update-Help". To get help online, search for the help topic in the TechNet library at
+https:/go.microsoft.com/fwlink/?LinkID=107116.
+At line:1 char:1
++ Get-Help About_Modukes
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-Help], HelpNotFoundException
+    + FullyQualifiedErrorId : HelpNotFound,Microsoft.PowerShell.Commands.GetHelpCommand
+
+PS C:\Users\alice\Desktop> Get-Help Get-Process
+
+NAME
+    Get-Process
+
+SYNTAX
+    Get-Process [[-Name] <string[]>] [-ComputerName <string[]>] [-Module] [-FileVersionInfo]  [<CommonParameters>]
+
+    Get-Process [[-Name] <string[]>] -IncludeUserName  [<CommonParameters>]
+
+    Get-Process -Id <int[]> [-ComputerName <string[]>] [-Module] [-FileVersionInfo]  [<CommonParameters>]
+
+    Get-Process -Id <int[]> -IncludeUserName  [<CommonParameters>]
+
+    Get-Process -InputObject <Process[]> [-ComputerName <string[]>] [-Module] [-FileVersionInfo]  [<CommonParameters>]
+
+    Get-Process -InputObject <Process[]> -IncludeUserName  [<CommonParameters>]
+
+
+ALIASES
+    gps
+    ps
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Get-Process -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=113324.
+
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
+
+ Directory: C:\Users\alice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         12/7/2020  11:33 AM                3D Objects
+d-r---         12/7/2020  11:33 AM                Contacts
+d-r---         12/8/2020   9:50 AM                Desktop
+d-r---         12/7/2020  11:33 AM                Documents
+d-r---         12/7/2020   4:42 PM                Downloads
+d-r---         12/7/2020  11:33 AM                Favorites
+d-r---         12/7/2020  11:33 AM                Links
+d-r---         12/7/2020  11:33 AM                Music
+d-r---         12/7/2020  11:36 AM                OneDrive
+d-r---         12/7/2020  11:35 AM                Pictures
+d-r---         12/7/2020  11:33 AM                Saved Games
+d-r---         12/7/2020  11:35 AM                Searches
+d-r---         12/8/2020  12:14 AM                Videos Directory: C:\Users\alice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         12/7/2020  11:33 AM                3D Objects
+d-r---         12/7/2020  11:33 AM                Contacts
+d-r---         12/8/2020   9:50 AM                Desktop
+d-r---         12/7/2020  11:33 AM                Documents
+d-r---         12/7/2020   4:42 PM                Downloads
+d-r---         12/7/2020  11:33 AM                Favorites
+d-r---         12/7/2020  11:33 AM                Links
+d-r---         12/7/2020  11:33 AM                Music
+d-r---         12/7/2020  11:36 AM                OneDrive
+d-r---         12/7/2020  11:35 AM                Pictures
+d-r---         12/7/2020  11:33 AM                Saved Games
+d-r---         12/7/2020  11:35 AM                Searches
+d-r---         12/8/2020  12:14 AM                Videos Directory: C:\Users\alice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         12/7/2020  11:33 AM                3D Objects
+d-r---         12/7/2020  11:33 AM                Contacts
+d-r---         12/8/2020   9:50 AM                Desktop
+d-r---         12/7/2020  11:33 AM                Documents
+d-r---         12/7/2020   4:42 PM                Downloads
+d-r---         12/7/2020  11:33 AM                Favorites
+d-r---         12/7/2020  11:33 AM                Links
+d-r---         12/7/2020  11:33 AM                Music
+d-r---         12/7/2020  11:36 AM                OneDrive
+d-r---         12/7/2020  11:35 AM                Pictures
+d-r---         12/7/2020  11:33 AM                Saved Games
+d-r---         12/7/2020  11:35 AM                Searches
+d-r---         12/8/2020  12:14 AM                Videos Directory: C:\Users\alice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         12/7/2020  11:33 AM                3D Objects
+d-r---         12/7/2020  11:33 AM                Contacts
+d-r---         12/8/2020   9:50 AM                Desktop
+d-r---         12/7/2020  11:33 AM                Documents
+d-r---         12/7/2020   4:42 PM                Downloads
+d-r---         12/7/2020  11:33 AM                Favorites
+d-r---         12/7/2020  11:33 AM                Links
+d-r---         12/7/2020  11:33 AM                Music
+d-r---         12/7/2020  11:36 AM                OneDrive
+d-r---         12/7/2020  11:35 AM                Pictures
+d-r---         12/7/2020  11:33 AM                Saved Games
+d-r---         12/7/2020  11:35 AM                Searches
+d-r---         12/8/2020  12:14 AM                Videos Directory: C:\Users\alice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         12/7/2020  11:33 AM                3D Objects
+d-r---         12/7/2020  11:33 AM                Contacts
+d-r---         12/8/2020   9:50 AM                Desktop
+d-r---         12/7/2020  11:33 AM                Documents
+d-r---         12/7/2020   4:42 PM                Downloads
+d-r---         12/7/2020  11:33 AM                Favorites
+d-r---         12/7/2020  11:33 AM                Links
+d-r---         12/7/2020  11:33 AM                Music
+d-r---         12/7/2020  11:36 AM                OneDrive
+d-r---         12/7/2020  11:35 AM                Pictures
+d-r---         12/7/2020  11:33 AM                Saved Games
+d-r---         12/7/2020  11:35 AM                Searches
+d-r---         12/8/2020  12:14 AM                Videos Directory: C:\Users\alice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         12/7/2020  11:33 AM                3D Objects
+d-r---         12/7/2020  11:33 AM                Contacts
+d-r---         12/8/2020   9:50 AM                Desktop
+d-r---         12/7/2020  11:33 AM                Documents
+d-r---         12/7/2020   4:42 PM                Downloads
+d-r---         12/7/2020  11:33 AM                Favorites
+d-r---         12/7/2020  11:33 AM                Links
+d-r---         12/7/2020  11:33 AM                Music
+d-r---         12/7/2020  11:36 AM                OneDrive
+d-r---         12/7/2020  11:35 AM                Pictures
+d-r---         12/7/2020  11:33 AM                Saved Games
+d-r---         12/7/2020  11:35 AM                Searches
+d-r---         12/8/2020  12:14 AM                Videos Directory: C:\Users\alice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         12/7/2020  11:33 AM                3D Objects
+d-r---         12/7/2020  11:33 AM                Contacts
+d-r---         12/8/2020   9:50 AM                Desktop
+d-r---         12/7/2020  11:33 AM                Documents
+d-r---         12/7/2020   4:42 PM                Downloads
+d-r---         12/7/2020  11:33 AM                Favorites
+d-r---         12/7/2020  11:33 AM                Links
+d-r---         12/7/2020  11:33 AM                Music
+d-r---         12/7/2020  11:36 AM                OneDrive
+d-r---         12/7/2020  11:35 AM                Pictures
+d-r---         12/7/2020  11:33 AM                Saved Games
+d-r---         12/7/2020  11:35 AM                Searches
+d-r---         12/8/2020  12:14 AM                Videos Directory: C:\Users\alice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         12/7/2020  11:33 AM                3D Objects
+d-r---         12/7/2020  11:33 AM                Contacts
+d-r---         12/8/2020   9:50 AM                Desktop
+d-r---         12/7/2020  11:33 AM                Documents
+d-r---         12/7/2020   4:42 PM                Downloads
+d-r---         12/7/2020  11:33 AM                Favorites
+d-r---         12/7/2020  11:33 AM                Links
+d-r---         12/7/2020  11:33 AM                Music
+d-r---         12/7/2020  11:36 AM                OneDrive
+d-r---         12/7/2020  11:35 AM                Pictures
+d-r---         12/7/2020  11:33 AM                Saved Games
+d-r---         12/7/2020  11:35 AM                Searches
+d-r---         12/8/2020  12:14 AM                Videos
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ die
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (die:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+die : The term 'die' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+
