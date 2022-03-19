@@ -15,5 +15,3 @@ Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a----         12/8/2020  10:34 AM              0 whatyouneedishere.txt"
 ~~~
-
-Difficulty : 1/10
