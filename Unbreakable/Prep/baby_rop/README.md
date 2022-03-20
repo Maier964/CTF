@@ -13,7 +13,7 @@ European Cyber Security Challenge (ECSC) is the annual European event that bring
 ~~~
 
 
-* Running the executable, we are greeted with a simple "welcome" message, allowing us the enter input:
+* Running the executable, we are greeted with a simple "welcome" message, allowing us to enter input:
 
 ![not found](p1.png "greeting")
 
