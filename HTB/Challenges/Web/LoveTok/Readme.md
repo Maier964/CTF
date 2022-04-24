@@ -2,7 +2,7 @@
 
 #### We are given a docker container and a ip and port to connect to trough http
 
-![[Pasted image 20220424152325.png]]
+![1](1.png "1")
 
 * Looking trough the php code of the site, we find this exploatable part:*
 
@@ -42,7 +42,7 @@
 ~~~
 
 * Testing the vuln.. it works.
-![[Pasted image 20220424153957.png]]
+![2](2.png "2")
 
 * Now to forge the payload:
 	* Location of flag.txt is not in the root www folder, but in the root directory and has a randomised name: ( we know this from the docker container)
@@ -59,9 +59,9 @@
 * Try to url encode..  \<payload> = <Mark>"ls%20%2F"</Mark>  -> Application crashed
 * Try to base64 encode.. \<payload> = <Mark>"base64_decode(bHMgLw)"</Mark> 
 		* Worked! 
-		* ![[Pasted image 20220424154336.png]]
+		* ![3](3.png "3")
 	* Next step is to just read the flag... 
-![[Pasted image 20220424154655.png]]
+![4](4.png "4")
 
 
 Final payload : 
