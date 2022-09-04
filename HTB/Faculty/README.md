@@ -29,7 +29,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.77 seconds
 
 * Change /etc/hosts file to include faculty.
 * This is what we are greeted with:
-![[Faculty1.png]]
+![](Faculty1.png)
 
 
 * Tried to brute force the id..
@@ -66,7 +66,7 @@ for i in range(1,10000):
 				* "==username=anything'+or+1=1+--+&password=anything==" this payload will bypass the panel.. Notice the space after the "--" comment. This is important because the backend database is MySql and comments in MySql require a space after the usual comment syntax to work.
 
 * The panel contains an "upload PDF" functionality, so this is probably the next step to exploit. Analysing the request, we got some large encoded data in the body:
-![[Faculty2.png]]
+![](Faculty2.png)
 
 * Burp is cool and decodes this for us automatically. It's Base64 + Triple URL encoding, which in plaintext, looks like this:
 ~~~html
@@ -124,7 +124,7 @@ so "DMBS" becomes " Nothing </b> </td> <a href="/etc/passwd"> Link </a> <td clas
 ~~~
 
 * This is what we got: 
-![[Faculty3.png]]
+![](Faculty3.png)
 
 - This approach did not work, so I decided to take anoter route.. Each of the uploaded files are stored in faculty.htb/mpdf/tmp/<random_name> so I looked for public exploits of mpdf
 
@@ -135,7 +135,7 @@ so "DMBS" becomes " Nothing </b> </td> <a href="/etc/passwd"> Link </a> <td clas
 	* (Where fname is the name of the file we want to include)
 		* So, seeing this, there's no need to copy and paste the script, we can just copy this payload into out encoded burp request
 		* At first, I thought the payload did not work because the browser pdf preview was empty. Upon downloading the pdf, we see an clickable icon which displays the contents of the file we searched for:
-		![[Faculty4.png]]
+		![](Faculty4.png)
 
 * We see a "developer"  and "gbyolo" account on the machine. Trying to get his ssh key...
 	* path : /home/developer/.ssh/id_rsa
@@ -155,10 +155,10 @@ so "DMBS" becomes " Nothing </b> </td> <a href="/etc/passwd"> Link </a> <td clas
 		* So on.. around 10 more :)
 			* Finally tried just plain "index.php" and it worked. It seems we can just work with relative paths and not even care where everything is.
 			* Started to get every php file on the server, from index.php we see we have another 3 possible files, so I just went down the php slide:
-			![[Faculty5.png]]
+			![](Faculty5.png)
 		* auth.php is commented so that might be interesting to look at(  instinctively )
 			* upon making the request to download the pdf containing the auth.php lfi, we get a 404.. So maye the comment is just because the file no longer exists?
-			![[Faculty6.png]]
+			![](Faculty6.png)
 
 * header.php seems generic so next interesting file would be db_connect.php which is shown from login.php
 
@@ -174,11 +174,11 @@ $conn= new mysqli('localhost','sched','Co.met06aci.dly53ro.per','scheduling_db')
 	* We could try logging in to the developer  or gbyolo account with this password.
 		* developer did not work
 		* gbyolo did work.. surprisingly. I though this was another rabbit hole :D 
-		![[Faculty7.png]]
+		![](Faculty7.png)
 * we see that he has mail.. that's certainly a hint ( or another trick to a rabbit hole :D, but we need to check it out nonetheless ) 
 
 * using this https://devanswers.co/you-have-mail-how-to-read-mail-in-ubuntu/ we continue the work. I know I already provided a link to the resource but I have to include this paragraph here aswell because it made me laugh 
-![[Faculty8.png]]
+![](Faculty8.png)
 
 * So this is the mail that we (gbyolo) recieved:
 ~~~mail
@@ -203,47 +203,47 @@ Hi gbyolo, you can now manage git repositories belonging to the faculty group. P
 ~~~
 
 * As we see what binaries can we execute with elevated priviledges, we see this meta-git thingy.
-![[Faculty9.png]]
+![](Faculty9.png)
 
 * So turns out we didnt even have to read the mail to figure out what to do next.. 99% percent of cases where you see sudo -l output something in a htb enviroment, it will mean that particular suid'ed binary is vulnerable.. so the first thing to do is to go to GTFO Bins.
 	* In here we dont find meta-git unfortunately.. so we just google for an exploit
 		* https://hackerone.com/reports/728040
 			* I wasted around 40 minutes to get the exploit working with developer user.. Just because I was in the home directory of gbyolo and developer was not allowed to write there.. For the PoC I kept trying to redirect the output of the whoami command to a file, so it evidently did not work.. And this small detail took me 40 minutes to realise :( . In the end though, I moved to the /tmp/ directory and all seemed fine.  So, just a hint in the future: ==never neglect user permissions==.. These simple things are often underlooked...
 			* So finally, the exploit worked, so we got a reverse shell to developer:
-![[Faculty10.png]]
+![](Faculty10.png)
 
-![[Faculty11.png]]
+![](Faculty11.png)
 
 * Grabbed the ssh key and immediately run linpeas while doing some manual recon :) 
 	* First thing that linpeas returned:
-![[Faculty12.png]]
+![](Faculty12.png)
 
 * Upon looking into a github PoC of the CVE, we find this:
-![[Faculty13.png]]
+![](Faculty13.png)
 
 * To be honest, I don't have so much faith in it but let's see..
 	* It did not work as account service and gnome control center were not found.. Moving on..
 * Linpeas also showed that gdb is active and included in PATH. This is worth noting I think (?) Im not 100% sure since every major linux distribution comes with gdb preinsalled..
 	* Upon further inspection, we see the gdb binary has the ==cap_sys_ptrace== capability.. What in the world is that, you may ask.
-	![[Faculty15.png]]
+	![](Faculty15.png)
 		* This capability is mandatory for gdb to work properly.
 
 * Tried the simple approach of attaching to a root process and spawning a shell (using the built-in "shell" command from gdb) but since gdb was ran from the developer user, the shell will be in the context of the developer, not root.
 * Looked at interesting processes, did not find anything that stood out
 * Looked at crontabs, found the sendmail.sh script that constantly sends an email to gbyolo.. but it has nothing to do with root so no privesc path there..
 * After half an hour, realised that the current user is part of the (debug) group..
-![[Faculty14.png]]
+![](Faculty14.png)
 * Decided to take a look at what processes are running under this group 
 	* Did not find anything useful..
 * Next thought was to brute force processes that are owned by root and contain the "system" symbol, in order to call that function and spawn a shell that way. 
 	* This should have been done with a script but it needed to execute commands in a gdb context and I found that to take me longer than just manually attaching to each process ( there are around 8 )
 	* Finally, process 728 had the symbol.
-![[Faculty16.png]]
+![](Faculty16.png)
 * Spawning a root shell in the normal way won't work, because the shell enviroment will be sandboxed by gdb. 
 * One option is to cat the flag and create another file which will be then read.. This works but it is not proper privesc.
-![[Faculty17.jpg]]
+![](Faculty17.png)
 * Upon checking this article: https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/, we can try and apply the SUID bit to the bash file and then just execute it as a normal user.
 	* I spent another 30 minutes trying to figure out why executing the bash binary will still drop the suid priviledge.. Until I found out that bash -p will give the result we need, because it allows the enviroment to be inherited from the SUID and thus allowing us to read any file of root.
 
-![[Faculty18.png]]
+![](Faculty18.png)
 
