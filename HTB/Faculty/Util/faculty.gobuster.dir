@@ -1,0 +1,6 @@
+/index.php            [Size: 12193] [--> login.php]
+/login.php            [Size: 4860]
+/header.php           [Size: 2871]
+/admin                [Size: 178] [--> http://faculty.htb/admin/]
+/test.php             [Size: 0]
+/topbar.php           [Size: 1206]
