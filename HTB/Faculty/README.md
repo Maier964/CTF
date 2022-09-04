@@ -66,6 +66,7 @@ for i in range(1,10000):
 				* "==username=anything'+or+1=1+--+&password=anything==" this payload will bypass the panel.. Notice the space after the "--" comment. This is important because the backend database is MySql and comments in MySql require a space after the usual comment syntax to work.
 
 * The panel contains an "upload PDF" functionality, so this is probably the next step to exploit. Analysing the request, we got some large encoded data in the body:
+
 ![](Faculty2.png)
 
 * Burp is cool and decodes this for us automatically. It's Base64 + Triple URL encoding, which in plaintext, looks like this:
@@ -158,6 +159,7 @@ so "DMBS" becomes " Nothing </b> </td> <a href="/etc/passwd"> Link </a> <td clas
 			![](Faculty5.png)
 		* auth.php is commented so that might be interesting to look at(  instinctively )
 			* upon making the request to download the pdf containing the auth.php lfi, we get a 404.. So maye the comment is just because the file no longer exists?
+			
 			![](Faculty6.png)
 
 * header.php seems generic so next interesting file would be db_connect.php which is shown from login.php
