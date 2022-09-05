@@ -245,7 +245,7 @@ Hi gbyolo, you can now manage git repositories belonging to the faculty group. P
 * One option is to cat the flag and create another file which will be then read.. This works but it is not proper privesc.
 ![](Faculty17.jpg)
 * Upon checking this article: https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/, we can try and apply the SUID bit to the bash file and then just execute it as a normal user.
-	* I spent another 30 minutes trying to figure out why executing the bash binary will still drop the suid priviledge.. Until I found out that bash -p will give the result we need, because it allows the enviroment to be inherited from the SUID and thus allowing us to read any file of root.
+	* I spent another 30 minutes trying to figure out why executing the bash binary will still drop the suid priviledge.. Until I found out that bash -p will give the result we need, because it inherits the enviroment from the SUID and thus allowing us to read any file of root.
 
 ![](Faculty18.png)
 
