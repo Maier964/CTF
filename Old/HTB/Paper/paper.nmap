@@ -1,0 +1,12 @@
+# Nmap 7.91 scan initiated Mon Feb 21 15:16:53 2022 as: nmap -sV -oA paper 10.10.11.143
+Nmap scan report for 10.10.11.143
+Host is up (0.096s latency).
+Not shown: 996 closed ports
+PORT     STATE    SERVICE  VERSION
+22/tcp   open     ssh      OpenSSH 8.0 (protocol 2.0)
+80/tcp   open     http     Apache httpd 2.4.37 ((centos) OpenSSL/1.1.1k mod_fcgid/2.3.9)
+443/tcp  open     ssl/http Apache httpd 2.4.37 ((centos) OpenSSL/1.1.1k mod_fcgid/2.3.9)
+1500/tcp filtered vlsi-lm
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Feb 21 15:17:20 2022 -- 1 IP address (1 host up) scanned in 26.61 seconds
