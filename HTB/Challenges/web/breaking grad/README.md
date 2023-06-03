@@ -100,6 +100,7 @@ module.exports = {
 - TLDR: In JavaScript, objects are created from prototypes, which serve as templates or blueprints for defining object properties and methods. Each object has an internal reference to its prototype, accessible through the `__proto__` attribute. By modifying this attribute, an attacker can introduce new properties or modify existing ones in the target object, even if it was not originally intended.
 
 - Here's a great diagram provided by Snyk:
+
   	![Great diagram provided by Snyk](images/Prototype_pollution_Attack.svg)
 
 - In our case, there is one catch: the server makes a validation that a key must be different from `__proto__` . Following this article from HackTricks (https://book.hacktricks.xyz/pentesting-web/deserialization/nodejs-proto-prototype-pollution), we get the following info:
