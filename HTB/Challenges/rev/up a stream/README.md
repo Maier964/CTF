@@ -18,7 +18,7 @@ Java streams are great! Why use 10 lines of completely readable code, when you c
 
 - We can see different integer operations that can easily be reversed:
 	- `hydrate` subtracts from an ASCII value
-	- `moisten` raises the even numbers to the power of 2
+	- `moisten` raises the odd numbers to the power of 2
 	- `drench` left shifts the value of a number with one bit, aka performs a multiplication by 2 
 	- `dilute`  basically multiplies the input with `3/2`
 	- `waterlog` performs a shift operation in a direction which is based on an simple linear equation
