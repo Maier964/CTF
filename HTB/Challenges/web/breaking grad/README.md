@@ -2,7 +2,9 @@
 
 #### Description:
 ```
-You and your buddy corrected the math in your physics teacher's paper on the decay of highly excited massive string states in the footnote of a renowned publication. He's just failed your thesis out of spite, for making a fool out of him in the university's research symposium. Now you can't graduate, unless you can do something about it... 🤷
+You and your buddy corrected the math in your physics teacher's paper on the decay of highly excited massive string
+states in the footnote of a renowned publication. He's just failed your thesis out of spite, for making a fool out
+of him in the university's research symposium. Now you can't graduate, unless you can do something about it... 🤷
 ```
 
 
