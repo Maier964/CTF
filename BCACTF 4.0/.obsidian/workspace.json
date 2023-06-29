@@ -1,0 +1,175 @@
+{
+  "main": {
+    "id": "6216d87d5433f8c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "3aed89da0f12f9c2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "758991827d2f7a7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BCACTF 4.0.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "10a33d959036079a",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ae361c60fe19d48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af7d2a94ef703091",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "91fe2bbcf43c2bfe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7a6c8f08cd8ea90a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "823b4187820543b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "378a2496033f98c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1132c6b5862b842c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "BCACTF 4.0.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f9d1aa696b1cacc3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "BCACTF 4.0.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "66ebbbc5b030284b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5cbb657d1f9088db",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "BCACTF 4.0.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "758991827d2f7a7a",
+  "lastOpenFiles": [
+    "sources/postfix-calculator/proof.png",
+    "sources/postfix-calculator/PostfixCalculator.py",
+    "sources/postfix-calculator",
+    "sources/password-protected/cracked.txt",
+    "sources/password-protected/hash.txt",
+    "sources/password-protected/shadow",
+    "sources/password-protected/solve.py",
+    "sources/password-protected/initial.png",
+    "BCACTF 4.0.md",
+    "sources/password-protected/Pasted image 20230629124411.png",
+    "sources/password-protected/Pasted image 20230629124406.png",
+    "sources/password-protected/hashes.png",
+    "sources/password-protected/password_protected.py",
+    "sources/password-protected",
+    "sources/asd",
+    "sources/many-time-pad/solve.py",
+    "sources/manipulate-spreadsheet/sort.png",
+    "sources/manipulate-spreadsheet/make_visible.png",
+    "sources/interpreted-arduino/solve.png",
+    "sources/hamsta/flag.png",
+    "sources/hamsta/max_distance_cap.png",
+    "sources/hamsta/main_screen.png",
+    "sources/babys-first-foren/Pasted image 20230629113318.png.md"
+  ]
+}
