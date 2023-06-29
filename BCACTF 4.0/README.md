@@ -31,15 +31,15 @@ You need to help us find their secret password.
 ```
 
 - The challenge provides a pdf file with a redacted section.
-	![[sources/aetherion-dynamics/pdf_overview.png]]
+	![](sources/aetherion-dynamics/pdf_overview.png) 
 
 - There are multiple ways of solving this, all of them relying on the fact that the redacted information and the redaction are two different components which can be separated. 
 - Using a tool such as `pdftohtml`, we can extract all the relevant information from the file and convert it to different formats. By default, it converts the pdf to a jpg which will contain the redacted information:
 
-![[sources/aetherion-dynamics/pdftohtml.png]]
+![](sources/aetherion-dynamics/pdftohtml.png)
 
 
-![[sources/aetherion-dynamics/solved.png]]
+![](sources/aetherion-dynamics/solved.png)
 
 
 ## Babys First Foren
@@ -51,11 +51,11 @@ I found this beginner's guide to forensics.
 
 - A simple challenge involving 3 steps:
 	- Exiftool to find the first part of the flag:
-		![[sources/babys-first-foren/first_step.png]]
+		![](sources/babys-first-foren/first_step.png)
 	 - Binwalk to extract hidden files in the png, find a text file which contained the second part of the flag on the last line:
-		![[sources/babys-first-foren/second_step.png]]
+		![](sources/babys-first-foren/second_step.png)
 	 - To detect the last part of the flag, I used an online service (https://stylesuxx.github.io/steganography/) that performed LSB Steganography decoding:
-	     ![[sources/babys-first-foren/third_step.png]]
+	     ![](sources/babys-first-foren/third_step.png)
 	    - Merged together, these 3 parts give us the final flag.
 
 
@@ -97,7 +97,7 @@ return
 
 - No input sanitation of the user-controlled 'kwds' variable -> SQL Injection. When looking at the training dataset, each and every response has the `resp_order` equal to 1, only one entry has a response entry equal to 2. 
 	- By abusing the injection vuln, we can trigger the particular response and get the flag
-![[sources/bcagpt/solve.png]]
+![](sources/bcagpt/solve.png)
 
 ### Discord
 #misc
@@ -117,7 +117,7 @@ My friend sent me a message by flashing his flashlight, and I recorded it using 
 - First instinct was to decipher the code as Morse, but that did not work
 - Since there are only 2 variables, we can guess it is a binary encoding. The following CyberChef recipe was used:
 
-![[sources/dots-and-dashes/recipe.png]]
+![](sources/dots-and-dashes/recipe.png)
 
 ### Duck Cord
 #pwn
@@ -211,12 +211,12 @@ tired out and revealing the flag, hopefully there's no bugs
 - A remote hamster can run a certain distance imposed by the user (capped by a server imposed `MAX_DISTANCE_VALUE`)
 - At each iteration, a new letter of the flag is revealed. 
 - The problem is that the max distance is not the length of the flag
-![[sources/hamsta/main_screen.png]]
+![](sources/hamsta/main_screen.png)
 
-![[sources/hamsta/max_distance_cap.png]]
+![](sources/hamsta/max_distance_cap.png)
 
 - The flag is longer than 11 characters, so we have to input negative values so the hamster will reveal all the flag:
-![[sources/hamsta/flag.png]]
+![](sources/hamsta/flag.png)
 
 ### Interpreted Arduino
 #rev 
@@ -227,7 +227,7 @@ It's supposed to print out the flag but it's not working. Can you help me figure
 I ran the `main.ino` file on the board, included below with the flag redacted.
 ```
 - We are given a simple Arduino program which prints the flag at the start of the program (in the setup() function) and then acts as a assisted CLI. To read the flag, we need to reset the program, to trigger the setup() function again:
-![[sources/interpreted-arduino/solve.png]]
+![](sources/interpreted-arduino/solve.png)
 
 ### Manipulate Spreadsheet
 #misc 
@@ -237,11 +237,11 @@ They said the flag was in [this spreadsheet](https://docs.google.com/spreadsheet
 
 - We are given a excel file with bleached values.
 - First thing is to make these values visible:
-![[sources/manipulate-spreadsheet/make_visible.png]]
+![](sources/manipulate-spreadsheet/make_visible.png)
 
 - Sort the indexes and construct the flag step by step by concatenating each found letter:
 
-![[sources/manipulate-spreadsheet/sort.png]]
+![](sources/manipulate-spreadsheet/sort.png)
 
 
 ### Many Time Pad
@@ -296,13 +296,13 @@ Can you help log Jon Wilkie back into his account?
 - This was my favorite challenge from this CTF.
 - The regex for checking the password hash was faulty. When entering the name of the user, we get part of his hash:
 
-![[sources/password-protected/initial.png]]
+![](sources/password-protected/initial.png)
 
 - Further padding to the username reveals new username and new hashes -> we can progressively get all the `/etc/shadow` file contents
 
 - After getting the contents of jonwilkie, use hashcat or john the ripper to crack his hash.
 
-![[sources/password-protected/hashes.png]]
+![](sources/password-protected/hashes.png)
 
 
 ### Postfix Calculator
@@ -312,7 +312,7 @@ Mr. Wang left some tricks behind in his Intro to CS labs before leaving BCA. Can
 ```
 
 - Standard python sandbox escape.
-![[sources/postfix-calculator/proof.png]]
+![](sources/postfix-calculator/proof.png)
 - Note: I used the second print to pass the necessity of two operands. 
 
 ###  Unionized
